@@ -1,0 +1,262 @@
+@font-face {
+    font-family: "Magneto";
+    src: url("../assets/fonts/Magneto.ttf");
+}
+
+@font-face {
+    font-family: "Nunito";
+    src: url("../assets/fonts/Nunito-SemiBold.ttf");
+}
+
+main {
+    background-image: url('../img/chlodnica.png');
+    background-position: bottom !important;
+    background-attachment: fixed;
+    background-size: cover;
+    text-shadow: 0px 0px 5px black, 0px 0px 5px black;
+    color: white;
+}
+
+header, .md-tabs {
+    background-color: #D31145 !important;
+    color: white !important;
+}
+
+h1 {
+    color: white !important;
+    text-align: center;
+    font-weight: bold !important;
+}
+
+h2, h3 {
+    background-color: #D31145;
+    border-radius: 10px;
+    color: white;
+    display: inline;
+    text-shadow: none;
+    padding: 4px;
+    font-weight: bold !important;
+}
+
+li {
+    list-style-type: "🚗";
+}
+
+.md-tabs__item, .md-nav__item {
+    list-style-type: none;
+}
+
+.md-sidebar__scrollwrap {
+    padding: 5px;
+}
+
+.md-nav__title {
+    color: white !important;
+    background: #D31145 !important;
+    display: inline;
+    padding: 4px;
+    text-shadow: none;
+    box-shadow: none !important;
+}
+
+a:hover {
+    color: #3d85c6 !important;
+    cursor: url('../img/klucz2.png'), auto !important;
+}
+
+article li a {
+    color: white !important;
+    margin-left: 5px !important;
+}
+
+.md-nav__link--passed {
+    color: #B6B4A5;
+}
+
+.md-nav__link--active {
+    color: #D31145 !important;
+}
+
+.md-header__button > img[src="../assets/images/autawka.png"] {
+    width: 15% !important;
+    height: 10% !important;
+    border-radius: 10px;
+}
+
+.md-grid {
+    max-width: 100% !important;
+}
+
+.md-nav__button > img[src="../assets/images/autawka.png"] {
+    border-radius: 10px;
+}
+
+@media (any-pointer: fine) {
+    .md-sidebar--primary {
+        display: none;
+    }
+    .md-search__inner, .md-search__output, .md-search__scrollwrap, .md-search__form {
+        background-color: rgba(0 ,0, 0, 0.2) !important;
+        backdrop-filter: blur(25px) !important;
+    }
+    .md-search__overlay {
+        display: none !important;
+    }
+    .md-search-result__article, .md-search-result__icon {
+        color: white !important;
+    }
+    .md-search-result__article > h2, .md-search__input, .md-search__input::placeholder, .md-search__icon, label[class="md-search__icon md-icon"], .md-search-result__meta {
+        color: white !important;
+    }
+    .md-nav--secondary > .md-nav__list {
+        border-radius: 10px !important;
+    }
+    .md-nav__title {
+        border-radius: 10px;
+        font-size: 1.25em;
+    }
+    .md-header__title {
+        margin-left: 13rem !important;
+    }
+}
+
+@media not (any-pointer: fine) {
+    img[alt="Złomek"], [alt="Roman"], [alt="Sally"], [alt="Guido"], [alt="Luigi"], [alt="Jackson Sztorm"] {
+        display: none;
+    }
+    .md-search__overlay, .md-search__inner, .md-search__scrollwrap, .md-search__form {
+        background-color: rgba(0 ,0, 0, 0.2) !important;
+        backdrop-filter: blur(25px) !important;
+    }
+    .md-overlay {
+        opacity: 0 !important;
+    }
+    .md-search-result__article, .md-search-result__icon {
+        color: white !important;
+    }
+    .md-search-result__article > h2, .md-search__input, .md-search__input::placeholder, .md-search__icon, label[class="md-search__icon md-icon"], .md-search-result__meta {
+        color: white !important;
+    }
+    .md-nav--primary > .md-nav__title {
+        font-family: Magneto;
+        font-size: 190% !important;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+}
+
+img[alt="Pixar Popcorn"] {
+    width: 80px;
+    margin-top: 20px;
+    margin-bottom: -20px;
+}
+
+img[alt="Auta"], [alt="Auta 2"], [alt="Auta 3"], [alt="Auta: Bujdy na resorach"] {
+    width: 160px;
+    margin-top: 20px;
+    margin-bottom: -20px;
+}
+
+img[alt="Guido"], [alt="Luigi"], [alt="Gienia"] {
+    width: 30%;
+    float: right;
+    filter: drop-shadow(5px 5px 5px #222222);
+}
+
+img[alt="Złomek"], [alt="Roman"], [alt="Sally"], [alt="Luigi"], [alt="Jackson Sztorm"] {
+    float: right;
+    filter: drop-shadow(5px 5px 5px #222222);
+}
+
+.md-header__topic > .md-ellipsis {
+    font-size: 150%;
+    font-family: Magneto;
+}
+
+body, .md-search__input {
+    font-family: Nunito;
+    font-weight: 900;
+}
+
+.md-ellipsis {
+    padding-left: 5px;
+    padding-right: 5px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.md-nav__link > .md-ellipsis {
+    text-shadow: none !important;
+}
+
+li > ul > li {
+    list-style-type: "🚧";
+}
+
+h3 {
+    margin-top: 0% !important;
+    margin-bottom: 0% !important;
+}
+
+a[href="../🎬 Filmy – Auta.pdf"], [href="../🎮 Gry – Auta.pdf"], [href="../🎧 Muzyka – Auta.pdf"]{
+    background-color: #D31145;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+    text-shadow: none;
+}
+
+a[href="../🎬 Filmy – Auta.pdf"]:hover, [href="../🎮 Gry – Auta.pdf"]:hover, [href="../🎧 Muzyka – Auta.pdf"]:hover {
+    background-color: white;
+    color: #D31145 !important;
+    transition: background-color 0.5s;
+}
+
+p > a {
+    color: white !important;
+    text-align: left;
+}
+
+blockquote {
+    color: #B6B4A5 !important;
+    font-size: 80%;
+    border-left: .2rem solid #B6B4A5 !important;
+}
+
+.md-sidebar--primary, .md-nav--secondary, .md-sidebar--primary .md-nav--primary {
+    background-color: unset !important;
+}
+
+.md-nav--secondary > .md-nav__list {
+    background-color: rgba(0 ,0, 0, 0.15) !important;
+    backdrop-filter: blur(20px) !important;
+    padding-top: 1px !important;
+}
+
+.md-nav--primary > .md-nav__list {
+    background-color: rgba(0 ,0, 0, 0.15) !important;
+    backdrop-filter: blur(20px) !important;
+}
+
+.md-nav--secondary .md-nav__list .md-nav__link {
+    font-size: 62%;
+}
+
+.md-sidebar__inner .md-nav__list .md-nav__link {
+    font-size: 100%;
+}
+
+mark, summary > div {
+    color: #D31145 !important;
+}
+
+code {
+    background-color: #1C1E1F !important;
+    color: #BEB9B0 !important;
+}
+
+body, label, input {
+    cursor: url('../img/klucz1.png'), auto !important;
+}
+
+a[href=""] {
+    cursor: not-allowed !important;
+}
