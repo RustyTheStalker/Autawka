@@ -50,15 +50,6 @@ li {
     padding: 5px;
 }
 
-.md-nav__title {
-    color: white !important;
-    background: #D31145 !important;
-    display: inline;
-    padding: 4px;
-    text-shadow: none;
-    box-shadow: none !important;
-}
-
 a:hover {
     color: #3d85c6 !important;
     cursor: url('../img/kursor2.png'), auto !important;
@@ -78,9 +69,13 @@ article li a {
 }
 
 .md-header__button > img[src="../assets/images/autawka.png"] {
-    width: 15% !important;
+    width: 100% !important;
     height: 10% !important;
     border-radius: 10px;
+}
+
+.md-header__button {
+    width: 5%;
 }
 
 .md-grid {
@@ -95,28 +90,53 @@ article li a {
     .md-sidebar--primary {
         display: none;
     }
+
     .md-search__inner, .md-search__output, .md-search__scrollwrap, .md-search__form {
         background-color: rgba(0 ,0, 0, 0.2) !important;
         backdrop-filter: blur(25px) !important;
     }
-    .md-search__overlay {
-        display: none !important;
+
+    .md-search__inner {
+        z-index: 2;
     }
+
+    .md-search__overlay {
+        z-index: 1;
+    }
+
     .md-search-result__article, .md-search-result__icon {
         color: white !important;
     }
+
     .md-search-result__article > h2, .md-search__input, .md-search__input::placeholder, .md-search__icon, label[class="md-search__icon md-icon"], .md-search-result__meta {
         color: white !important;
     }
+
     .md-nav--secondary > .md-nav__list {
         border-radius: 10px !important;
     }
+
     .md-nav__title {
-        border-radius: 10px;
-        font-size: 1.25em;
+        font-size: 1.3em;
+        background: none !important;
+        background-image: url('../img/emblemat.png') !important;
+        background-size: 100% !important;
+        background-repeat: no-repeat;
+        padding-top: 15px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 20px;
+        display: inline;
+        text-shadow: none;
+        color: white;
+        font-family: Magneto;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        box-shadow: none !important;
     }
-    .md-header__title {
-        margin-left: 13rem !important;
+
+    .md-header__ellipsis {
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -124,19 +144,24 @@ article li a {
     img[alt="Złomek"], [alt="Roman"], [alt="Sally"], [alt="Guido"], [alt="Luigi"], [alt="Jackson Sztorm"] {
         display: none;
     }
+
     .md-search__overlay, .md-search__inner, .md-search__scrollwrap, .md-search__form {
         background-color: rgba(0 ,0, 0, 0.2) !important;
         backdrop-filter: blur(25px) !important;
     }
+
     .md-overlay {
         opacity: 0 !important;
     }
+
     .md-search-result__article, .md-search-result__icon {
         color: white !important;
     }
+
     .md-search-result__article > h2, .md-search__input, .md-search__input::placeholder, .md-search__icon, label[class="md-search__icon md-icon"], .md-search-result__meta {
         color: white !important;
     }
+
     .md-nav--primary > .md-nav__title {
         font-family: Magneto;
         font-size: 190% !important;
@@ -162,7 +187,13 @@ img[alt="Guido"], [alt="Luigi"], [alt="Gienia"] {
     filter: drop-shadow(5px 5px 5px #222222);
 }
 
-img[alt="Złomek"], [alt="Roman"], [alt="Sally"], [alt="Luigi"], [alt="Jackson Sztorm"] {
+img[alt="Jackson Sztorm"] {
+    width: 40%;
+    float: right;
+    filter: drop-shadow(5px 5px 5px #222222);
+}
+
+img[alt="Złomek"], [alt="Roman"], [alt="Sally"], [alt="Luigi"] {
     float: right;
     filter: drop-shadow(5px 5px 5px #222222);
 }
@@ -229,6 +260,7 @@ blockquote {
     background-color: rgba(0 ,0, 0, 0.15) !important;
     backdrop-filter: blur(20px) !important;
     padding-top: 1px !important;
+    margin-top: 20px;
 }
 
 .md-nav--primary > .md-nav__list {
@@ -259,4 +291,8 @@ body, label, input {
 
 a[href=""] {
     cursor: not-allowed !important;
+}
+
+em {
+    font-weight: normal;
 }
